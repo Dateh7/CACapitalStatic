@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caibre Capital – The Gold Standard in Wealth Stewardship</title>
+
+  <!-- Favicon: Gold bar chart on navy (inline SVG) -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230C1E3F'/%3E%3Crect x='20' y='55' width='12' height='25' rx='2' fill='%23C9A86E'/%3E%3Crect x='44' y='42' width='12' height='38' rx='2' fill='%23C9A86E'/%3E%3Crect x='68' y='30' width='12' height='50' rx='2' fill='%23C9A86E'/%3E%3C/svg%3E"
+  />
+
+  <!-- Optional: you can create these later if you want -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- SEO Meta -->
+  <meta
+    name="description"
+    content="Caibre Capital Management provides bespoke wealth stewardship, discretionary investment management, and retirement planning for high-net-worth individuals, families, and emerging professionals under the trusted framework of Envestpro."
+  />
+  <meta
+    name="keywords"
+    content="Caibre Capital, Caibre Ambe, wealth management, financial planning, discretionary investment management, retirement planning, fiduciary, capital preservation, Envestpro, South Africa financial advisor"
+  />
+  <meta name="author" content="Caibre Ambe Capital Management" />
+  <link rel="canonical" href="https://www.caibreambecapital.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Caibre Capital – The Gold Standard in Wealth Stewardship" />
+  <meta
+    property="og:description"
+    content="Bespoke wealth stewardship, discretionary investment management, fiduciary guidance and retirement planning for discerning clients and multi-generational families."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.caibreambecapital.com/" />
+  <meta property="og:image" content="https://www.caibreambecapital.com/Caibre.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Caibre Capital – The Gold Standard in Wealth Stewardship" />
+  <meta
+    name="twitter:description"
+    content="Bespoke wealth stewardship and meticulously researched strategies under the trusted framework of Envestpro."
+  />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Caibre Ambe Capital Management",
+      "description": "Caibre Capital Management offers bespoke wealth stewardship, discretionary investment management, fiduciary advice, and retirement & capital preservation strategies.",
+      "url": "https://www.caibreambecapital.com/",
+      "logo": "https://www.caibreambecapital.com/Caibre.jpg",
+      "sameAs": [
+        "https://envestpro.co.za/"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ============================= */
+    /*       CORE THEME SYSTEM       */
+    /* ============================= */
+
+    :root {
+      --color-bg-primary: #0C1E3F;
+      --color-bg-secondary: #1A1A1A;
+      --color-bg-cream: #F8F6F1;
+      --color-text-primary: #F8F6F1;
+      --color-text-secondary: #C9A86E;
+      --color-text-dark: #0C1E3F;
+
+      --font-serif: 'Lora', serif;
+      --font-sans: 'Inter', sans-serif;
+    }
+
+    /* Dark (default) */
+    body.dark {
+      --color-bg-primary: #0C1E3F;   /* Hero / navbar */
+      --color-bg-secondary: #0A0F1A; /* Footer / cards */
+      --color-bg-cream: #111A2B;     /* Alternate sections */
+      --color-text-primary: #F8F6F1; /* Ivory text */
+      --color-text-secondary: #C9A86E; /* Gold */
+      --color-text-dark: #D1D5DB;    /* Soft gray body text */
+    }
+
+    /* Light mode */
+    body.light {
+      --color-bg-primary: #F8F6F1;   /* Hero ivory */
+      --color-bg-secondary: #ECE9E3; /* Footer/secondary */
+      --color-bg-cream: #F4F1EA;     /* Alt section */
+      --color-text-primary: #1F2933;
+      --color-text-secondary: #B58E4D;
+      --color-text-dark: #111827;
+    }
+
+    /* ============================= */
+    /*        GLOBAL BASE STYLES     */
+    /* ============================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-primary);
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout containers */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding: 6rem 1.5rem;
+      }
+    }
+
+    /* Utility background/text classes */
+    .bg-mode-primary {
+      background-color: var(--color-bg-primary);
+    }
+
+    .bg-mode-secondary {
+      background-color: var(--color-bg-secondary);
+    }
+
+    .bg-mode-cream {
+      background-color: var(--color-bg-cream);
+    }
+
+    .text-mode-primary {
+      color: var(--color-text-primary);
+    }
+
+    .text-mode-secondary {
+      color: var(--color-text-secondary);
+    }
+
+    .text-mode-dark {
+      color: var(--color-text-dark);
+    }
+
+    .font-serif-display {
+      font-family: var(--font-serif);
+    }
+
+    .font-sans-body {
+      font-family: var(--font-sans);
+    }
+
+    .text-gold-accent {
+      color: var(--color-text-secondary);
+    }
+
+    .border-gold-accent {
+      border-color: var(--color-text-secondary);
+    }
+
+    /* Hero backgrounds */
+    .hero-gradient-dark {
+      background: linear-gradient(to bottom, #0C1E3F, #0A1128, #050608);
+    }
+
+    .hero-gradient-light {
+      background-color: #F8F6F1; /* ivory */
+    }
+
+    /* Gold shadows */
+    .shadow-gold-md {
+      box-shadow:
+        0 4px 6px -1px rgba(201, 168, 110, 0.4),
+        0 2px 4px -2px rgba(201, 168, 110, 0.4);
+    }
+
+    .shadow-gold-hover:hover {
+      box-shadow:
+        0 10px 15px -3px rgba(201, 168, 110, 0.7),
+        0 4px 6px -2px rgba(201, 168, 110, 0.5);
+    }
+
+    /* Buttons */
+    .btn-outline-gold {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      border-radius: 0.75rem;
+      border: 2px solid var(--color-text-secondary);
+      color: var(--color-text-secondary);
+      background: transparent;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-gold:hover {
+      background-color: var(--color-text-secondary);
+      color: var(--color-bg-primary);
+      transform: translateY(-1px);
+    }
+
+    .btn-solid-gold {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      border-radius: 0.6rem;
+      border: 2px solid var(--color-text-secondary);
+      background-color: var(--color-text-secondary);
+      color: var(--color-bg-primary);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-solid-gold:hover {
+      background-color: transparent;
+      color: var(--color-text-secondary);
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 2.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .nav-link {
+      position: relative;
+      padding-bottom: 0.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.15rem;
+      width: 0%;
+      height: 2px;
+      background-color: var(--color-text-secondary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--color-text-secondary);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon-button {
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-button:hover {
+      background-color: rgba(201, 168, 110, 0.15);
+    }
+
+    .icon-button svg {
+      color: inherit;
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      padding: 0.75rem 0;
+      border-top: 1px solid rgba(201, 168, 110, 0.5);
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    #mobile-menu.open {
+      display: flex;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+
+      #mobile-menu-toggle {
+        display: none;
+      }
+    }
+
+    /* Hero */
+    #hero {
+      padding-top: 6.5rem;
+      padding-bottom: 5rem;
+    }
+
+    @media (min-width: 768px) {
+      #hero {
+        padding-top: 7.5rem;
+        padding-bottom: 9rem;
+      }
+    }
+
+    .hero-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-title {
+        font-size: 3.25rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 3.8rem;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-subtitle {
+        font-size: 1.25rem;
+      }
+    }
+
+    .hero-body {
+      max-width: 640px;
+      margin: 0 auto 3rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    @media (min-width: 768px) {
+      .hero-body {
+        font-size: 1.15rem;
+      }
+    }
+
+    .hero-footnote {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    /* Preloader */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-bg-primary);
+      z-index: 9999;
+      transition: opacity 0.7s ease;
+    }
+
+    .preloader-bars {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @keyframes grow {
+      0%, 100% { height: 20px; opacity: 0.6; }
+      50% { height: 60px; opacity: 1; }
+    }
+
+    .bar {
+      width: 8px;
+      background-color: var(--color-text-secondary);
+      border-radius: 0.35rem;
+      animation: grow 1.2s ease-in-out infinite;
+    }
+
+    .bar:nth-child(2) { animation-delay: 0.2s; }
+    .bar:nth-child(3) { animation-delay: 0.4s; }
+
+    /* Stewardship section */
+    .stewardship-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .stewardship-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+        gap: 3rem;
+      }
+    }
+
+    .ca-frame {
+      background-color: var(--color-bg-primary);
+      height: 16rem;
+      border-radius: 0.9rem;
+      border-bottom: 4px solid var(--color-text-secondary);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.75);
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      .ca-frame {
+        height: 22rem;
+      }
+    }
+
+    .ca-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .qualifications {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(201, 168, 110, 0.35);
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--color-text-secondary);
+      max-width: 18rem;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .stewardship-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      font-weight: 600;
+    }
+
+    .stewardship-title {
+      margin-top: 0.5rem;
+      font-size: 2.1rem;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .stewardship-title {
+        font-size: 2.5rem;
+      }
+    }
+
+    .stewardship-body {
+      margin-top: 1rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .stewardship-list {
+      margin-top: 1.75rem;
+      list-style: none;
+      padding: 0;
+      font-size: 1.05rem;
+    }
+
+    .stewardship-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .stewardship-bullet {
+      font-size: 1.4rem;
+      line-height: 1;
+      color: var(--color-text-secondary);
+      margin-top: 0.1rem;
+    }
+
+    /* Services */
+    .services-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .services-title {
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .services-title {
+        font-size: 2.6rem;
+      }
+    }
+
+    .services-subtitle {
+      margin-top: 0.8rem;
+      font-size: 1.05rem;
+      max-width: 38rem;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.85;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .service-card {
+      border-radius: 0.9rem;
+      padding: 2rem 1.9rem;
+      border: 1px solid rgba(201, 168, 110, 0.15);
+      border-top: 4px solid var(--color-text-secondary);
+      box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.75),
+        0 0 0 1px rgba(15, 23, 42, 0.85);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    body.dark .service-card {
+      background-color: rgba(15, 23, 42, 0.85);
+      color: var(--color-text-primary);
+    }
+
+    body.light .service-card {
+      background-color: #F8F6F1; /* same feel as hero ivory */
+      color: #1F2933;
+      box-shadow:
+        0 6px 16px rgba(15, 23, 42, 0.18),
+        0 0 0 1px rgba(201, 168, 110, 0.25);
+      border-color: rgba(181, 142, 77, 0.45);
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--color-text-secondary);
+      font-family: var(--font-serif);
+    }
+
+    .service-card p {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(201, 168, 110, 0.18);
+      border-color: rgba(201, 168, 110, 0.4);
+    }
+
+    /* Contact */
+    .contact-header {
+      text-align: center;
+      max-width: 40rem;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-title {
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .contact-title {
+        font-size: 2.6rem;
+      }
+    }
+
+    .contact-subtitle {
+      margin-top: 0.75rem;
+      font-size: 1.02rem;
+    }
+
+    .contact-form-wrapper {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+
+    .contact-form {
+      background-color: var(--color-bg-secondary);
+      color: var(--color-text-primary);
+      padding: 2.5rem 2rem;
+      border-radius: 1rem;
+      border-top: 4px solid var(--color-text-secondary);
+      box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.85),
+        0 0 0 1px rgba(15, 23, 42, 0.9);
+    }
+
+    @media (min-width: 768px) {
+      .contact-form {
+        padding: 2.8rem 2.5rem;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      border-radius: 0.6rem;
+      border: 1px solid transparent;
+      padding: 0.8rem 0.9rem;
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      background-color: var(--color-bg-cream);
+      color: var(--color-text-dark);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: var(--color-text-secondary);
+      box-shadow: 0 0 0 1px rgba(201, 168, 110, 0.4);
+    }
+
+    .form-status {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    /* Footer */
+    footer {
+      padding: 2.5rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+    }
+
+    .footer-reg {
+      max-width: 28rem;
+      line-height: 1.5;
+    }
+
+    .footer-email a {
+      color: var(--color-text-secondary);
+      font-weight: 600;
+    }
+
+    .footer-email a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="font-sans-body antialiased dark">
+
+<!-- =================== PRELOADER =================== -->
+<div id="preloader" class="bg-mode-primary text-mode-primary">
+  <div class="preloader-bars">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <h1 class="font-serif-display text-gold-accent" style="font-size:1.2rem; letter-spacing:0.45em; text-transform:uppercase;">
+    Caibre Capital
+  </h1>
+</div>
+
+<!-- =================== NAVBAR =================== -->
+<nav class="bg-mode-primary text-mode-primary">
+  <div class="container nav-inner">
+
+    <!-- Brand -->
+    <div class="brand">
+      <div style="width:26px; height:26px;">
+        <svg viewBox="0 0 100 100" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="85" x2="90" y2="85" stroke="var(--color-text-primary)" stroke-width="2" />
+          <rect x="25" y="45" width="10" height="40" fill="var(--color-text-primary)" rx="1" ry="1"/>
+          <rect x="45" y="30" width="10" height="55" fill="var(--color-text-primary)" rx="1" ry="1"/>
+          <rect x="65" y="15" width="10" height="70" fill="#C9A86E" rx="1" ry="1"/>
+        </svg>
+      </div>
+      <span class="brand-title font-serif-display">Caibre Capital Management</span>
+    </div>
+
+    <!-- Desktop nav links -->
+    <div class="nav-links">
+      <a href="#stewardship" class="nav-link">Stewardship</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Consultation</a>
+    </div>
+
+    <!-- Controls -->
+    <div class="nav-controls">
+      <!-- Mode toggle -->
+      <button id="mode-toggle" class="icon-button" aria-label="Toggle Light/Dark Mode">
+        <!-- We’ll show the *target* mode icon:
+             dark mode active -> show sun (light)
+             light mode active -> show moon (dark) -->
+        <svg id="sun-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+          <circle cx="12" cy="12" r="5"></circle>
+        </svg>
+        <svg id="moon-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" width="24" height="24" style="display:none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <!-- Mobile menu toggle -->
+      <button id="mobile-menu-toggle" class="icon-button md-hidden" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke-width="2" stroke="currentColor" width="24" height="24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="bg-mode-primary text-mode-primary">
+    <a href="#stewardship" class="nav-link">Stewardship</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#contact" class="nav-link">Consultation</a>
+  </div>
+</nav>
+
+<!-- =================== HERO =================== -->
+<header
+  id="hero"
+  class="hero-gradient-dark text-mode-primary"
+>
+  <div class="hero-inner" data-aos="fade-up">
+    <h1 class="hero-title font-serif-display">
+      Your Legacy Demands <span class="text-gold-accent">Precision.</span>
+    </h1>
+    <p class="hero-subtitle text-gold-accent">
+      THE GOLD STANDARD.
+    </p>
+    <p class="hero-body">
+      Caibre Capital Management offers bespoke wealth stewardship and meticulously researched strategies
+      for high-net-worth individuals, multi-generational families, and emerging young professionals looking
+      to build enduring financial foundations.
+    </p>
+    <a href="#contact" class="btn-outline-gold shadow-gold-md shadow-gold-hover">
+      Request a Private Consultation
+    </a>
+    <p class="hero-footnote">
+      Proudly advising clients under the trusted framework of
+      <a href="https://envestpro.co.za/" target="_blank" rel="noopener" class="text-gold-accent" style="font-weight:700; text-decoration:underline;">
+        Envestpro.
+      </a>
+    </p>
+  </div>
+</header>
+
+<!-- =================== STEWARDSHIP =================== -->
+<section id="stewardship" class="section bg-mode-cream text-mode-dark">
+  <div class="container stewardship-grid">
+
+    <!-- Left: Portrait + Qualifications -->
+    <div class="stewardship-left" data-aos="fade-right">
+      <div class="ca-frame">
+        <!-- Caibre.jpg in same folder as index.html -->
+        <img src="img/Caibre.png" alt="Caibre Ambe portrait" class="ca-image" />
+      </div>
+
+      <div class="qualifications" data-aos="fade-up" data-aos-delay="120">
+        <p>Bachelor of Commerce – <span style="font-style:normal; font-weight:600;">Rhodes University</span></p>
+        <p>Postgraduate Diploma in Financial Planning</p>
+        <p>CFP<sup>®</sup> Candidate</p>
+      </div>
+    </div>
+
+    <!-- Right: Ethos & copy -->
+    <div class="stewardship-right" data-aos="fade-left">
+      <p class="stewardship-eyebrow">Our Ethos</p>
+      <h2 class="stewardship-title font-serif-display">Stewardship Over Transaction.</h2>
+      <p class="stewardship-body">
+        We transcend the traditional advisory role. Caibre Capital Management is dedicated to managing
+        your legacy, not just your portfolio. At the heart of our philosophy lies a commitment to fostering
+        enduring, healthy, and trust-based relationships with every client.
+        We believe true financial stewardship is not built on transactions — it’s built on understanding,
+        transparency, and partnership across generations.
+      </p>
+      <ul class="stewardship-list">
+        <li>
+          <span class="stewardship-bullet">&bull;</span>
+          <span>Comprehensive planning for Generational Capital.</span>
+        </li>
+        <li>
+          <span class="stewardship-bullet">&bull;</span>
+          <span>Long-term client relationships grounded in mutual respect and integrity.</span>
+        </li>
+        <li>
+          <span class="stewardship-bullet">&bull;</span>
+          <span>Expertise in complex asset management.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES =================== -->
+<section id="services" class="section bg-mode-primary text-mode-primary">
+  <div class="container">
+
+    <div class="services-header" data-aos="fade-up">
+      <h2 class="services-title font-serif-display">Exclusive Advisory Services</h2>
+      <p class="services-subtitle">
+        Our limited capacity ensures every client receives a dedicated level of service that is truly bespoke.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Card 1 -->
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Private Financial Planning</h3>
+        <p>
+          Detailed, holistic strategies covering assets, liabilities, and objectives to build a resilient
+          financial structure tailored to your life, values, and ambitions.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="60">
+        <h3>Discretionary Investment Management</h3>
+        <p>
+          Strategic, research-driven asset allocation, portfolio construction, and continuous management
+          across locally and globally diversified instruments.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="120">
+        <h3>Retirement &amp; Capital Preservation</h3>
+        <p>
+          Bespoke retirement fund structuring, living annuity analysis, and capital preservation strategies
+          to support a dignified, sustainable post-retirement lifestyle.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="180">
+        <h3>Fiduciary &amp; Risk Mitigation</h3>
+        <p>
+          Holistic analysis of risk exposures with insurance and protection solutions designed to safeguard
+          family, business, and legacy capital across generations.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="240">
+        <h3>Corporate Benefits &amp; Pension</h3>
+        <p>
+          Advisory on corporate benefit structures, group schemes, and executive pension optimisation aligned
+          with governance, compliance, and talent value propositions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section id="contact" class="section bg-mode-cream text-mode-dark">
+  <div class="container">
+
+    <div class="contact-header" data-aos="fade-up">
+      <h2 class="contact-title font-serif-display">Begin Your Stewardship Review</h2>
+      <p class="contact-subtitle">
+        Due to the highly personalized nature of our service, Caibre Ambe accepts a limited number of new
+        clients per quarter.
+      </p>
+    </div>
+
+    <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="80">
+      <!-- Web3Forms -->
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-form"
+      >
+        <!-- Your Access Key -->
+        <input type="hidden" name="access_key" value="5b5da67e-1737-4fb8-be0b-bd742cae9f70" />
+
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" name="name" required class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" name="email" required class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea name="message" rows="4" required class="form-textarea"></textarea>
+        </div>
+
+        <button type="submit" class="btn-solid-gold shadow-gold-md shadow-gold-hover">
+          Send Message
+        </button>
+
+        <p class="form-status">
+          Your request will be reviewed confidentially. You will receive a follow-up if there is an alignment
+          with our current intake capacity.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer class="bg-mode-secondary text-mode-primary">
+  <div class="footer-inner">
+    <div>
+      &copy; 2025 Caibre Ambe Capital Management. All Rights Reserved.
+    </div>
+
+    <div class="footer-reg font-sans-body">
+      <p>
+        <span class="text-gold-accent" style="font-weight:600;">Regulatory Status:</span>
+        Caibre Ambe is an authorised representative of
+        <a href="https://envestpro.co.za/" target="_blank" rel="noopener" class="text-gold-accent" style="font-weight:600;">Envestpro. </a>
+      </p>
+      <p>Authorised by the Financial Sector Conduct Authority (FSCA).</p>
+    </div>
+
+    <div class="footer-email">
+      <a href="mailto:info@caibreambecapital.com">info@caibreambecapital.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- =================== SCRIPTS =================== -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // PRELOADER + AOS
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 700);
+
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  });
+
+  // THEME TOGGLE
+  const bodyEl = document.body;
+  const heroEl = document.getElementById("hero");
+  const modeToggle = document.getElementById("mode-toggle");
+  const sunIcon = document.getElementById("sun-icon");
+  const moonIcon = document.getElementById("moon-icon");
+
+  // Show *target* mode:
+  // - dark mode active => show sun (go to light), sun is WHITE
+  // - light mode active => show moon (go to dark), moon is GOLD
+  function setMode(mode) {
+    if (mode === "light") {
+      bodyEl.classList.remove("dark");
+      bodyEl.classList.add("light");
+      heroEl.classList.remove("hero-gradient-dark");
+      heroEl.classList.add("hero-gradient-light");
+
+      // Show moon (target: dark) in gold
+      moonIcon.style.display = "block";
+      moonIcon.style.color = "#B58E4D";
+      sunIcon.style.display = "none";
+
+      localStorage.setItem("theme", "light");
+    } else {
+      bodyEl.classList.remove("light");
+      bodyEl.classList.add("dark");
+      heroEl.classList.remove("hero-gradient-light");
+      heroEl.classList.add("hero-gradient-dark");
+
+      // Show sun (target: light) in white
+      sunIcon.style.display = "block";
+      sunIcon.style.color = "#FFFFFF";
+      moonIcon.style.display = "none";
+
+      localStorage.setItem("theme", "dark");
+    }
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    setMode(savedTheme);
+  } else {
+    const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+    setMode(prefersLight ? "light" : "dark");
+  }
+
+  modeToggle.addEventListener("click", () => {
+    const newMode = bodyEl.classList.contains("light") ? "dark" : "light";
+    setMode(newMode);
+  });
+
+  // MOBILE MENU
+  const mobileToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+  });
+
+  // Close mobile menu when clicking a link
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+  });
+</script>
+
+</body>
+</html>
